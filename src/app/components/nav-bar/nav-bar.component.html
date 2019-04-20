@@ -1,0 +1,8 @@
+<nav class="dark">
+	<a  routerLink="/patients" routerLinkActive="active">Patients</a>
+	&nbsp;
+	<a *ngIf="userDetail" class="navlink">Welcome {{userDetail.email}}</a>
+	<a (click)="onLogout()">Logout</a>
+</nav>
+
+<a (click)="onCheck()">Check</a>
